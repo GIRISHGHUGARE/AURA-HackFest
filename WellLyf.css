@@ -1,0 +1,698 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family:'Raleway';
+    list-style: none;
+    text-decoration: none;
+}
+.banner{
+    background: url(headerbg.png);
+    background-size: 100% 220px;
+    position: fixed;
+    width: 100%;
+    height: 220px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    z-index: 1005;
+    justify-content: space-between;
+}
+
+body{
+   
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    flex: 1;
+}
+
+.header
+{
+    padding: 40px;
+}
+.banner  img{
+    position: relative;
+    transition: all 0.55 ease;
+}
+
+.user-shenan{
+    height: 100%;
+    float: right;
+    position: relative;
+    padding-right: 70px;
+    bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 1001;
+}
+
+
+
+.user-shenan .login_btn{
+    color: white;
+    font-size: 20px;
+    background-color: rgba(0,0,0,0.4);
+    padding: 10px;
+    border-width : 1px;
+    border-style: solid;
+    border-radius: 20px;
+    /* border-top-width: 10px;
+    border-bottom-width: 10px; */
+    transition: all .55s ease;  
+}
+.user-shenan .login_btn:hover{
+    transform: translateX(8px);
+    border-color: white;
+}
+.user-shenan .signup_btn{
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+    background-color: rgba(0,0,0,0.4);
+    padding: 10px;
+    border-width : 1px;
+    border-style: solid;
+    border-radius: 20px;
+    /* border-top-width: 10px;
+    border-bottom-width: 10px; */
+    transition: all .55s ease; 
+}
+.user-shenan .signup_btn:hover{
+    transform: translateX(8px);
+    border-color: white;
+}
+.banner header{
+    position:relative;
+    right:0;   
+    z-index:0;
+    width: 100%;
+    display: flex;    
+    padding: 33px 9%;
+
+
+}
+
+.navlist{
+    display: flex;
+    position: relative;
+    top:20px;
+    transition: all .55s ease;
+}
+.navlist a{
+    color: white;
+    margin-left: 100px;
+    font-size: 25px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;  
+    position: relative;
+}
+
+.navlist a li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 35px;
+}
+.navlist #home-nav{
+    border-bottom-color: white;
+}
+
+.navlist a:hover{
+    border-bottom: 2px solid white;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.info-container{
+    position: relative;
+    top:320px;
+    max-height: 300px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    border-radius: 30px;
+}
+.info-container .info-img{
+    margin-left: 20px;
+}
+.info-container .info-text{
+    display: flex;
+    flex-direction:column;
+}
+.info-container .info-text p{
+    margin-top: 20px;
+    font-size: 20px;
+}
+.info-container .info-text h3{
+        font-size: 40px;
+}
+.info-container .info-text button{
+    width: 100px;
+    font-size: 20px;
+    border: none;
+    background: red;
+    font-weight:700;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.goals-container{
+    position: relative;
+    top:400px;
+    left: 60px;
+    height: auto;
+    color: white;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 85%;
+
+}
+.goals-container .goals-img{
+    margin-left: 20px;
+    width: 603px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.goals-container .goals-img .img-yoga{
+    width:200px;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+    bottom: 40px;
+    box-shadow: rgba(0,0,0,0.65) 0px 5px 15px;
+}
+
+.goals-container .goals-img .img-running{
+    width:200px;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+    left: 40px;
+    box-shadow: rgba(0,0,0,0.65) 0px 5px 15px;
+}
+
+.goals-container .goals-img .img-running img{
+    position: relative;
+    right: 60px;
+    top:5px;
+}
+.goals-container .goals-img .img-workout{
+    width:200px;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: rgba(0,0,0,0.65) 0px 5px 15px;
+}
+.goals-container .goals-img .img-workout img{
+    position: relative;
+    right: 100px;
+    top:5px;
+}
+.goals-container .goals-img .img-hiking{
+    width:200px;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+    top: 40px;
+    left: 40px;
+    box-shadow: rgba(0,0,0,0.65) 0px 5px 15px;
+}
+
+.goals-container .goals-text{
+    position: relative;
+    display: flex;
+    flex-direction:column;
+    width: 80%;
+    background-color: black;
+    padding: 40px;
+    border-radius: 30px;
+
+}
+.goals-container .goals-text p{
+    margin-top: 20px;
+    font-size: 20px;
+}
+.goals-container .goals-text h3{
+        font-size: 40px;
+}
+.goals-container .goals-text button{
+    width: 120px;
+    font-size: 20px;
+    border: none;
+    background: red;
+    font-weight:700;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.fitness-container{
+    position: relative;
+    top: 650px;
+    max-height: auto;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    border-radius: 30px;
+    margin-bottom: 100px;
+    padding-bottom: 50px;
+}
+.fitness-container .fitness-img{
+        display: flex;
+        gap: 7em;
+        position: relative;
+        bottom: 100px;
+
+}
+.fitness-container .fitness-text{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.fitness-container .fitness-text p{
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+.fitness-container .fitness-text h3{
+        font-size: 40px;
+}
+.fitness-container .fitness-text button{
+    width: 130px;
+    font-size: 20px;
+    border: none;
+    background: red;
+    font-weight:700;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.diet-container{
+    position: relative;
+    top:700px;
+    max-height: 300px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 80%;
+    border-radius: 30px;
+    margin-bottom: 200px;
+}
+.diet-container .diet-img{
+    margin-left: 20px;
+}
+.diet-container .diet-text{
+    display: flex;
+    flex-direction:column;
+    padding: 30px;
+}
+.diet-container .diet-text p{
+    margin-top: 20px;
+    font-size: 20px;
+}
+.diet-container .diet-text h3{
+        font-size: 40px;
+}
+.diet-container .diet-text button{
+    width: 200px;
+    font-size: 20px;
+    border: none;
+    background: red;
+    font-weight:700;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.footer{
+    width: 100%;
+    height:auto;
+    background: linear-gradient(to top,black 40%,transparent);
+    position: relative;
+    top:600px;
+    margin-top: auto;
+}
+
+.footer .logo{
+    font-size: 3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer .logo a i{
+    background-color: white;
+    padding: 13px;
+    margin: 10px;
+    border-radius: 50%;
+    color: black;
+}
+
+.footer .copyright-text{
+    color: white;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+
+
+
+/* login.css CODE */
+.login_btn button{
+   
+    font-size: 20px;
+    font-weight:600;
+    color:white;
+    background: rgba(0,0,0,0);
+    outline:none;
+    border:none;
+    cursor:pointer;
+    border-radius:5px;
+}
+.poplogin{
+    display: none;
+    position:relative;
+    opacity:0;
+    transform:translate(-50%,-50%) scale(1.25);
+    width:380px;
+    padding:20px 30px;
+    background:#fff;
+    box-shadow:2px 2px 5px 5px rgba(0,0,0,0.15);
+    border-radius:10px;
+    transition:top 0ms ease-in-out 200ms,
+    opacity 200ms ease-in-out 0ms,
+    transform 20ms ease-in-out 0ms;
+    z-index: 1001;
+}
+.poplogin.active{
+    position: absolute;
+    display: block;
+    top:400px;
+    left:50%;
+    opacity:1;
+    transform:translate(-50%,-50%) scale(1);
+    transition:top 0ms ease-in-out 0ms,
+    opacity 200ms ease-in-out 0ms,
+    transform 20ms ease-in-out 0ms;
+}
+.poplogin .closelogin{
+    position:absolute;
+    top:10px;
+    right:10px;
+    width:15px;
+    height:15px;
+    background:#888;
+    color:#eee;
+    text-align:center;
+    line-height:15px;
+    border-radius:15px;
+    cursor:pointer;
+}
+.poplogin .loginform h2{
+    text-align:center;
+    color:#222;
+    margin:10px 0px 20px;
+    font-size:25px;
+}
+.poplogin .loginform .loginform-element {
+  margin:15px 0px;
+}
+.poplogin .loginform .loginform-element label{
+  font-size:14px;
+  color:#222;
+}
+.poplogin .loginform .loginform-element input[type="text"],
+.poplogin .loginform .loginform-element input[type="password"] {
+  margin-top:5px;
+  display:block;
+  width:100%;
+  padding:10px;
+  outline:none;
+  border:1px solid #aaa;
+  border-radius:5px;
+}
+.poplogin .loginform .loginform-element input[type="checkbox"] {
+  margin-right:5px;
+}
+.poplogin .loginform .loginform-element button{
+  width:100%;
+  height:40px;
+  border:none;
+  outline:none;
+  font-size:16px;
+  background:#222;
+  color:#f5f5f5;
+  border-radius:10px;
+  cursor:pointer;
+}
+.poplogin .loginform .loginform-element a{
+  display:block;
+  text-align:right;
+  font-size:15px;
+  color:#1a79ca;
+  text-decoration:none;
+  font-weight: 600;
+}
+
+
+/*signup.css CODE */
+.signup_btn button{
+    font-size: 20px;
+    font-weight:600;
+    color:white;
+    background: rgba(0,0,0,0);
+    outline:none;
+    border:none;
+    cursor:pointer;
+    border-radius:5px;
+}
+.popsignup{
+    display: none;
+    position:relative;
+    opacity:0;
+    transform:translate(-50%,-50%) scale(1.25);
+    width:380px;
+    padding:20px 30px;
+    background:#fff;
+    box-shadow:2px 2px 5px 5px rgba(0,0,0,0.15);
+    border-radius:10px;
+    transition:top 0ms ease-in-out 200ms,
+    opacity 200ms ease-in-out 0ms,
+    transform 20ms ease-in-out 0ms;
+}
+.popsignup.active{
+        display: block;
+        position: absolute;
+        top: 400px;
+        left: 50%;
+        opacity:1;
+        transform:translate(-50%,-50%) scale(1);
+        transition:top 0ms ease-in-out 0ms,
+        opacity 200ms ease-in-out 0ms,
+        transform 20ms ease-in-out 0ms;
+        z-index: 1005;
+  }
+.popsignup .close-btn{
+    position:absolute;
+    top:10px;
+    right:10px;
+    width:15px;
+    height:15px;
+    background:#888;
+    color:#eee;
+    text-align:center;
+    line-height:15px;
+    border-radius:15px;
+    cursor:pointer;
+}
+.popsignup .form h2{
+    text-align:center;
+    color:#222;
+    margin:10px 0px 20px;
+    font-size:25px;
+}
+.popsignup .form .form-element {
+    margin:15px 0px;
+}
+.popsignup .form .form-element label{
+    font-size:14px;
+    color:#222;
+}
+.popsignup .form .form-element input[type="text"],
+.popsignup .form .form-element input[type="password"] {
+    margin-top:5px;
+    display:block;
+    width:100%;
+    padding:10px;
+    outline:none;
+    border:1px solid #aaa;
+    border-radius:5px;
+}
+.popsignup .form .form-element input[type="checkbox"] {
+    margin-right:5px;
+}
+.popsignup .form .form-element button{
+    width:100%;
+    height:40px;
+    border:none;
+    outline:none;
+    font-size:16px;
+    background:#222;
+    color:#f5f5f5;
+    border-radius:10px;
+    cursor:pointer;
+}
+.popsignup .form .form-element a{
+    display:block;
+    text-align:right;
+    font-size:15px;
+    color:#1a79ca;
+    text-decoration:none;
+    font-weight: 600;
+}
+
+@media (max-width:1630px){
+    .navlist a{
+        font-size: 30px;
+    }
+
+}
+
+
+@media (max-width:1500px){
+    .banner img{
+        display: none;
+    }
+}
+
+/* @media (max-width:1260px){
+    .navlist a{
+        margin-left: 30px;
+    }
+} */
+
+@media (max-width:1115px){
+    .goals-container .goals-text{
+        right: 20px;
+    }
+    .goals-container .goals-img{
+        display: none;
+    }
+    .fitness-container .fitness-img{
+        display: none;
+    }
+    .goals-container{
+        margin-right: 200px;
+    }
+}
+@media (max-width:900px){
+    .navlist {
+        gap: 1em;
+    }
+    .navlist a{
+        font-size: 20px;
+    }
+    .fitness-container{
+        top: 500px;
+    }
+    .fitness-container .fitness-text{
+        padding-top: 40px;
+    }
+} 
+@media (max-width:900px){
+    .info-container .info-img{
+        position: absolute;
+        z-index: 1000;
+        height: 700px;
+    }
+    .info-container .info-text{
+        text-align: center;
+        z-index: 1001;
+        font-size: 10px;
+        padding: 10px;
+    }
+    .info-container .info-text h3{
+        font-size: 40px ;
+    }
+    .info-container .info-text p{
+        font-size: 15px ;
+    }
+    .info-container .info-text button{
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+    }
+
+    .info-container{
+        bottom:90px;   
+    }
+
+    .diet-container{
+        top:500px;
+    }
+    
+    .diet-container .diet-img{
+        display: none;
+    }
+}
+@media (max-width:840px){
+    .user-shenan{
+        flex-direction: column;
+        top:20px
+    }
+    .user-shenan .login_btn{
+        padding: 5px;
+        font-size: 15px;
+    }
+    .user-shenan .signup_btn{
+        padding: 5px;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width:630px){
+    .navlist{
+        gap: 1em;
+    }
+    .user-shenan{
+        padding-right: 40px;
+    }
+}
+
+@media (max-width:630px){
+    .navlist{
+        gap: 1em;
+    }
+    .user-shenan{
+        padding-right: 40px;
+    }
+    .banner header{
+        padding:20px 5%;
+    }
+}

@@ -1,0 +1,478 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Raleway';
+    list-style: none;
+    text-decoration: none;
+}
+.banner{
+    background: url(headerbg.png);
+    background-size: 100% 220px;
+    position: fixed;
+    width: 100%;
+    height: 220px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    z-index: 1005;
+
+}
+.header{
+    margin: 0px;
+    padding: 40px;
+}
+body{
+   
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.banner > img{
+    position: relative;
+
+}
+
+.user-shenan{
+    height: 100%;
+    float: right;
+    position: relative;
+    padding-right: 70px;
+    bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 1001;
+}
+
+
+
+.user-shenan .login_btn{
+    color: white;
+    font-size: 20px;
+    background-color: rgba(0,0,0,0.4);
+    padding: 10px;
+    border-width : 1px;
+    border-style: solid;
+    border-radius: 20px;
+    /* border-top-width: 10px;
+    border-bottom-width: 10px; */
+    transition: all .55s ease;  
+}
+.user-shenan .login_btn:hover{
+    transform: translateX(8px);
+    border-color: white;
+}
+.user-shenan .signup_btn{
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+    background-color: rgba(0,0,0,0.4);
+    padding: 10px;
+    border-width : 1px;
+    border-style: solid;
+    border-radius: 20px;
+    /* border-top-width: 10px;
+    border-bottom-width: 10px; */
+    transition: all .55s ease;
+}
+.user-shenan .signup_btn:hover{
+    transform: translateX(8px);
+    border-color: white;
+}
+.banner header{
+    position:relative;
+    right:0;  
+    z-index:0;
+    width: 100%;
+    display: flex;    
+    padding: 33px 9%;
+}
+
+.navlist{
+    display: flex;
+    position: relative;
+    top:20px;
+    transition: all .55s ease;
+    gap:2em;
+}
+.navlist a{
+    color: white;
+    margin-left: 100px;
+    font-size: 25px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+    display: flex;
+   
+}
+
+.navlist #fitness-nav{
+    border-bottom-color: white;
+}
+
+.navlist a:hover{
+    border-bottom: 2px solid white;
+}
+
+.flip-card-container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 320px;
+        gap: 5em;
+        justify-content: center;
+    }
+
+    .flip-card1 {
+      background-color: transparent;
+      width: 300px;
+      height: 450px;
+      border: 1px solid #f1f1f1;
+      perspective: 1000px; /* Remove this if you don't want the 3D effect */
+      margin: 10px;
+
+    }
+
+    /* This container is needed to position the front and back side */
+    .flip-card1-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+
+    /* Do a horizontal flip when you move the mouse over the flip box container */
+    .flip-card1:hover .flip-card1-inner {
+      transform: rotateY(180deg);
+    }
+
+    /* Position the front and back side */
+    .flip-card1-front,
+    .flip-card1-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden; /* Safari */
+      backface-visibility: hidden;
+    }
+
+    /* Style the front side (fallback if image is missing) */
+    .flip-card1-front {
+      background-color: black;
+      color: black;
+        padding-top: 50px;
+        border-radius: 30px;
+    }
+
+    /* Style the back side */
+    .flip-card1-back {
+      background-color: grey;
+        padding-top: 50px;
+      color: white;
+      transform: rotateY(180deg);
+        border-radius: 30px;
+    }
+.flip-card1-back .price{
+    background-color: lawngreen;
+    margin:40px;
+    padding:10px;
+    border-radius: 20px;
+}
+
+.app-info-text{
+    color:grey;
+    text-align: center;
+    padding-top: 100px;
+}
+.install-button {
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.install-button:hover {
+    background-color: #45a049;
+}
+
+/* login.css CODE */
+.login_btn button{
+   
+    font-size: 20px;
+    font-weight:600;
+    color:white;
+    background: rgba(0,0,0,0);
+    outline:none;
+    border:none;
+    cursor:pointer;
+    border-radius:5px;
+}
+.poplogin{
+    display: none;
+    position:relative;
+    opacity:0;
+    transform:translate(-50%,-50%) scale(1.25);
+    width:380px;
+    padding:20px 30px;
+    background:#fff;
+    box-shadow:2px 2px 5px 5px rgba(0,0,0,0.15);
+    border-radius:10px;
+    transition:top 0ms ease-in-out 200ms,
+    opacity 200ms ease-in-out 0ms,
+    transform 20ms ease-in-out 0ms;
+    z-index: 1001;
+}
+.poplogin.active{
+    position: absolute;
+    display: block;
+    top:50%;
+    left:50%;
+    opacity:1;
+    transform:translate(-50%,-50%) scale(1);
+    transition:top 0ms ease-in-out 0ms,
+    opacity 200ms ease-in-out 0ms,
+    transform 20ms ease-in-out 0ms;
+}
+.poplogin .closelogin{
+    position:absolute;
+    top:10px;
+    right:10px;
+    width:15px;
+    height:15px;
+    background:#888;
+    color:#eee;
+    text-align:center;
+    line-height:15px;
+    border-radius:15px;
+    cursor:pointer;
+}
+.poplogin .loginform h2{
+    text-align:center;
+    color:#222;
+    margin:10px 0px 20px;
+    font-size:25px;
+}
+.poplogin .loginform .loginform-element {
+  margin:15px 0px;
+}
+.poplogin .loginform .loginform-element label{
+  font-size:14px;
+  color:#222;
+}
+.poplogin .loginform .loginform-element input[type="text"],
+.poplogin .loginform .loginform-element input[type="password"] {
+  margin-top:5px;
+  display:block;
+  width:100%;
+  padding:10px;
+  outline:none;
+  border:1px solid #aaa;
+  border-radius:5px;
+}
+.poplogin .loginform .loginform-element input[type="checkbox"] {
+  margin-right:5px;
+}
+.poplogin .loginform .loginform-element button{
+  width:100%;
+  height:40px;
+  border:none;
+  outline:none;
+  font-size:16px;
+  background:#222;
+  color:#f5f5f5;
+  border-radius:10px;
+  cursor:pointer;
+}
+.poplogin .loginform .loginform-element a{
+  display:block;
+  text-align:right;
+  font-size:15px;
+  color:#1a79ca;
+  text-decoration:none;
+  font-weight: 600;
+}
+
+
+/*signup.css CODE */
+.signup_btn button{
+    font-size: 20px;
+    font-weight:600;
+    color:white;
+    background: rgba(0,0,0,0);
+    outline:none;
+    border:none;
+    cursor:pointer;
+    border-radius:5px;
+}
+.popsignup{
+    display: none;
+    position:relative;
+    opacity:0;
+    transform:translate(-50%,-50%) scale(1.25);
+    width:380px;
+    padding:20px 30px;
+    background:#fff;
+    box-shadow:2px 2px 5px 5px rgba(0,0,0,0.15);
+    border-radius:10px;
+    transition:top 0ms ease-in-out 200ms,
+    opacity 200ms ease-in-out 0ms,
+    transform 20ms ease-in-out 0ms;
+}
+.popsignup.active{
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        opacity:1;
+        transform:translate(-50%,-50%) scale(1);
+        transition:top 0ms ease-in-out 0ms,
+        opacity 200ms ease-in-out 0ms,
+        transform 20ms ease-in-out 0ms;
+        z-index: 1005;
+  }
+.popsignup .close-btn{
+    position:absolute;
+    top:10px;
+    right:10px;
+    width:15px;
+    height:15px;
+    background:#888;
+    color:#eee;
+    text-align:center;
+    line-height:15px;
+    border-radius:15px;
+    cursor:pointer;
+}
+.popsignup .form h2{
+    text-align:center;
+    color:#222;
+    margin:10px 0px 20px;
+    font-size:25px;
+}
+.popsignup .form .form-element {
+    margin:15px 0px;
+}
+.popsignup .form .form-element label{
+    font-size:14px;
+    color:#222;
+}
+.popsignup .form .form-element input[type="text"],
+.popsignup .form .form-element input[type="password"] {
+    margin-top:5px;
+    display:block;
+    width:100%;
+    padding:10px;
+    outline:none;
+    border:1px solid #aaa;
+    border-radius:5px;
+}
+.popsignup .form .form-element input[type="checkbox"] {
+    margin-right:5px;
+}
+.popsignup .form .form-element button{
+    width:100%;
+    height:40px;
+    border:none;
+    outline:none;
+    font-size:16px;
+    background:#222;
+    color:#f5f5f5;
+    border-radius:10px;
+    cursor:pointer;
+}
+.popsignup .form .form-element a{
+    display:block;
+    text-align:right;
+    font-size:15px;
+    color:#1a79ca;
+    text-decoration:none;
+    font-weight: 600;
+}
+
+@media (max-width:1630px){
+    .navlist a{
+        font-size: 30px;
+        margin-left: 40px;
+    }
+
+}
+
+
+@media (max-width:1500px){
+    .banner img{
+        display: none;
+    }
+}
+
+@media (max-width:1150px){
+    .navlist a {
+        font-size: 20px;
+    }
+    .navlist{
+        gap: 1em;
+    }
+}
+
+@media (max-width:900px){
+    .navlist {
+        gap: 1em;
+    }
+    .navlist a{
+        font-size: 20px;
+    }
+} 
+@media (max-width:840px){
+    .user-shenan{
+        flex-direction: column;
+        top:20px
+    }
+    .user-shenan .login_btn{
+        padding: 5px;
+        font-size: 15px;
+    }
+    .user-shenan .signup_btn{
+        padding: 5px;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    .navlist{
+        gap: 10px;
+    }
+}
+
+@media (max-width:800px){
+    .navlist a{
+    font-size: 20px;
+    margin-left: 10px;
+    }
+}
+@media (max-width:630px){
+    .navlist{
+        gap: 1em;
+    }
+    .user-shenan{
+        padding-right: 40px;
+    }
+}
+@media (max-width:630px){
+    .navlist{
+        gap: 1em;
+    }
+    .user-shenan{
+        padding-right: 40px;
+    }
+    .banner header{
+        padding:20px 5%;
+    }
+}
