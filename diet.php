@@ -12,7 +12,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tranquil Vista</title>
+        <title>Well Lyf</title>
         <link rel="stylesheet" type="text/css" href="dietform.css">
         <link rel="stylesheet"
         href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
@@ -23,6 +23,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="WellLyffavicon.png">
+    
     </head>
     <body>
         <div class="banner">
@@ -75,7 +77,7 @@
         </div>
 
 
-<!--login-->
+        <!--login form-->
         <div class="poplogin">
             <div class="closelogin">&times;</div>
             <div class="loginform">
@@ -104,6 +106,7 @@
             </div>
         </div>
 
+        <!-- diet main body  -->
         <div class="goals-container">
             <div class="goalsinfo-container">
                 <div class="goalsinfo-img">
@@ -122,7 +125,7 @@
             </div>
         </div>
 
-
+<!-- diet quiz question  -->
         <div class="popquiz">
                        <div class="close_btn">&times;</div>
                         <div class="quiz-container" id="quiz">
@@ -161,7 +164,7 @@
                 document.querySelector(".popsignup").classList.remove("active");
             });
 
-//login
+            //login
             document.querySelector("#show-login").addEventListener("click",function(){
                 document.querySelector(".poplogin").classList.add("active");
             });
@@ -173,7 +176,7 @@
                 document.querySelector(".popquiz").classList.remove("active");
             });
 
-//signup
+            //signup
            
         function openlogin(){
                 //to check whether entered all values
@@ -218,7 +221,7 @@
 
 
             const quizData = [
-  {
+            {
     question: "What's your diet type?",
     a: "Standard-I'm easy",
     b: "pescetarian",
@@ -258,15 +261,10 @@
             answerEls.forEach(answerEl => answerEl.checked = false)
         }
         submitBtn.addEventListener('click', () => {
-            // const answer = getSelected()
                currentQuiz++
                if(currentQuiz < quizData.length) {
-                   loadQuiz()}
-              //  } else {
-              //      quiz.innerHTML = `
-              //      <h2>You answered ${score}/${quizData.length} questions correctly</h2>
-              //      <button onclick="location.reload()">Reload</button>`
-              // }
+                   loadQuiz()
+                }
         });
 
         </script>
@@ -275,15 +273,9 @@
             document.querySelector("#show-quiz").addEventListener("click",function(){
                 document.querySelector(".popquiz").classList.add("active");
             });
-            //  document.querySelector(".popquiz").addEventListener("click",function(){
-            //     document.querySelector(".popquiz").classList.remove("active");
-            // });
-
-
 
             overlay = document.querySelector(".overlay"),
             showBtn = document.querySelector(".start"),
-            // closeBtn = document.querySelector(".close-btn");
             showBtn.addEventListener("click", () => section.classList.add("active"));
             overlay.addEventListener("click", () =>
                 section.classList.remove("active")
