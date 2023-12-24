@@ -1,12 +1,15 @@
+<!-- Start of html -->
+
 <!DOCTYPE html>
 <html>
+
+<!-- meta data  -->
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tranquil Vista</title>
+        <title>Well Lyf</title>
         <link rel="stylesheet" type="text/css" href="MyGoals.css">
-        <link rel="stylesheet"
-        href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
         <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +19,9 @@
         <link rel="icon" type="image/x-icon" href="WellLyffavicon.png">
         <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     </head>
+    
     <body>
+        <!-- banner and navlist  -->
         <div class="banner">
             <h6></h6>
             <img src="logo.png" height="170px">
@@ -28,12 +33,15 @@
                     <li><a href="diet.php" id="diet-nav">Diet Plan</a></li>
                 </ul>
             </header>
+
+            <!-- Login signup buttons -->
+
             <div class="user-shenan">
                 <div class="login_btn"><button id="show-login">Login</button></div>
                 <div class="signup_btn"><button id="show-signup">Signup</button></div>
             </div>
-            <h5></h5>
         </div>
+
         <!-- signup form -->
         <div class="popsignup">
             <div class="close-btn">&times;</div>
@@ -56,7 +64,7 @@
                 <label for="password">Password</label>
                 <input type="password" id="password" placeholder="Enter password">
                 <br>
-       
+
                 <input type="checkbox" id="remember-me">
                 <label for="remember-me">Remember-me</label>
                 <br>
@@ -69,7 +77,7 @@
         </div>
 
 
-<!--login-->
+        <!--login form -->
         <div class="poplogin">
             <div class="closelogin">&times;</div>
             <div class="loginform">
@@ -98,6 +106,7 @@
             </div>
         </div>
 
+        <!-- my goals main page  -->
         <div class="goals-container">
             <div class="goalsinfo-container">
                 <div class="goalsinfo-img">
@@ -116,7 +125,7 @@
             </div>
         </div>
 
-
+        <!-- my goals quiz  -->
         <div class="popquiz">
                        <div class="close_btn">&times;</div>
                         <div class="quiz-container" id="quiz" name="form" action="radio.php" method=POST>
@@ -147,7 +156,8 @@
                     <div id="demo"></div>
 
         <script type="text/javascript" >
-            //signup
+            //signup js
+
             document.querySelector("#show-signup").addEventListener("click",function(){
                 document.querySelector(".popsignup").classList.add("active");
             });
@@ -155,7 +165,7 @@
                 document.querySelector(".popsignup").classList.remove("active");
             });
 
-//login
+            //login js
             document.querySelector("#show-login").addEventListener("click",function(){
                 document.querySelector(".poplogin").classList.add("active");
             });
@@ -163,11 +173,12 @@
                 document.querySelector(".poplogin").classList.remove("active");
             });
 
+            //quiz js
             document.querySelector(".popquiz .close_btn").addEventListener("click",function(){
                 document.querySelector(".popquiz").classList.remove("active");
             });
 
-//signup
+        // check signup
            
         function openlogin(){
                 //to check whether entered all values
@@ -180,7 +191,7 @@
                     window.open('file:///C:/Users/Akshay/Desktop/akshay%20college/VSCode/website/dashboard.html',"_blank")
                 }
             }
-
+        // send email
             function sendEmail(){
                 //to check whether entered all values
                 let loginForm = document.getElementById("form");
@@ -210,70 +221,70 @@
             }
 
 
-
+            // quiz questions
             const quizData = [
-  {
-    question: "What's your biological sex?",
-    a: "Male",
-    b: "Female",
-    c: "Transgender",
-    d: "Rather not to say",
-  },
-  {
-    question: "What's your age?",
-    a: "15-20",
-    b: "20-30",
-    c: "30-40",
-    d: "40 onwards",
-  },
-  {
-    question: "How active are you?",
-    a: "little or No Active",
-    b: "Ligthly Active",
-    c: "Moderatly Active",
-    d: "Very Active",        
-  },
-  {
-    question: "How tall are you? (in ft)",
-    a: "1-2",
-    b: "2-4",
-    c: "4-6",
-    d: "6 onwards"                  
-  },
-  {
-    question: "Have you ever done Gym workout?",
-    a: "Yes",
-    b: "Never",  
-    c: "4-6",
-    d: "6 onwards" ,
-  },
-  {
-    question: "Have you ever done Yoga?",
-    a: "On daily basis",
-    b: "On weekly basis",
-    c: "Not frequently",
-    d: "Never" ,                    
-  }];
-  const quiz= document.getElementById('quiz')
-  const answerEls = document.querySelectorAll('.answer')
-  const questionEl = document.getElementById('question')
-  const a_text = document.getElementById('a_text')
-  const b_text = document.getElementById('b_text')
-  const c_text = document.getElementById('c_text')
-  const d_text = document.getElementById('d_text')
-  const submitBtn = document.getElementById('submit')
-  let currentQuiz = 0
-  let score = 0
-  loadQuiz()
-  function loadQuiz() {
-    deselectAnswers()
-      const currentQuizData = quizData[currentQuiz]
-      questionEl.innerText = currentQuizData.question
-            a_text.innerText = currentQuizData.a
-            b_text.innerText = currentQuizData.b
-            c_text.innerText = currentQuizData.c
-            d_text.innerText = currentQuizData.d
-        }
+            {
+                question: "What's your biological sex?",
+                a: "Male",
+                b: "Female",
+                c: "Transgender",
+                d: "Rather not to say",
+            },
+            {
+                question: "What's your age?",
+                a: "15-20",
+                b: "20-30",
+                c: "30-40",
+                d: "40 onwards",
+            },
+            {
+                question: "How active are you?",
+                a: "little or No Active",
+                b: "Ligthly Active",
+                c: "Moderatly Active",
+                d: "Very Active",        
+            },
+            {
+                question: "How tall are you? (in ft)",
+                a: "1-2",
+                b: "2-4",
+                c: "4-6",
+                d: "6 onwards"                  
+            },
+            {
+                question: "Have you ever done Gym workout?",
+                a: "Yes",
+                b: "Never",  
+                c: "4-6",
+                d: "6 onwards" ,
+            },
+            {
+                question: "Have you ever done Yoga?",
+                a: "On daily basis",
+                b: "On weekly basis",
+                c: "Not frequently",
+                d: "Never" ,                    
+            }];
+            const quiz= document.getElementById('quiz')
+            const answerEls = document.querySelectorAll('.answer')
+            const questionEl = document.getElementById('question')
+            const a_text = document.getElementById('a_text')
+            const b_text = document.getElementById('b_text')
+            const c_text = document.getElementById('c_text')
+            const d_text = document.getElementById('d_text')
+            const submitBtn = document.getElementById('submit')
+            let currentQuiz = 0
+            let score = 0
+            loadQuiz()
+            function loadQuiz() {
+                deselectAnswers()
+                const currentQuizData = quizData[currentQuiz]
+                questionEl.innerText = currentQuizData.question
+                a_text.innerText = currentQuizData.a
+                b_text.innerText = currentQuizData.b
+                c_text.innerText = currentQuizData.c
+                d_text.innerText = currentQuizData.d
+            }
         function deselectAnswers() {
             answerEls.forEach(answerEl => answerEl.checked = false)
         }
