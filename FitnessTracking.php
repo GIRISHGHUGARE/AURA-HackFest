@@ -11,7 +11,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>WelLyf</title>
+        <title>Well Lyf</title>
+        <link rel="icon" type="image/x-icon" href="WellLyffavicon.png">
         <link rel="stylesheet" type="text/css" href="FitnessTracking.css">
         <link rel="stylesheet"
         href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
@@ -22,9 +23,10 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-        <link rel="icon" type="image/x-icon" href="WellLyffavicon.png">
     </head>
+
     <body>
+<!-- banner and navlist  -->
         <div class="banner">
             <img src="final logo.png" height="160px" width="200px">
             <div class="header">
@@ -35,6 +37,7 @@
                     <li><a href="diet.php" id="diet-nav">Diet Plan</a></li>
                 </ul>
             </div>
+            <!-- login and signup buttons  -->
             <div class="user-shenan">
                 <div class="login_btn"><button id="show-login">Login</button></div>
                 <div class="signup_btn"><button id="show-signup">Signup</button></div>
@@ -180,7 +183,7 @@
                 document.querySelector(".popsignup").classList.remove("active");
             });
 
-//login
+            //login
             document.querySelector("#show-login").addEventListener("click",function(){
                 document.querySelector(".poplogin").classList.add("active");
             });
@@ -188,7 +191,7 @@
                 document.querySelector(".poplogin").classList.remove("active");
             });
 
-//signup
+            //signup
            
         function openlogin(){
                 //to check whether entered all values
