@@ -4,10 +4,13 @@
     include("connection.php");
 ?>
 
-<!-- Start of HTML -->
+<!-- Start of HTML code -->
 
 <!DOCTYPE html>
 <html>
+
+<!-- meta data  -->
+
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,12 +24,12 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-        <link rel="icon" type="image/x-icon" href="WellLyffavicon.png">
+        <link rel="icon" type="image/x-icon" href="WellLyffavicon - Copy.png">
     </head>
+
     <body>
 
         <!-- banner image and nav list -->
-
         <div class="banner">
             <img src="final logo.png" height="160px">
             <div class="header">
@@ -44,8 +47,7 @@
                 <div class="signup_btn">
                     <button id="show-signup">Signup</button>
                 </div>
-            </div>
-            
+            </div>     
         </div>
 
         <!-- signup form -->
@@ -197,13 +199,14 @@
             
             function openlogin(){
                 //to check whether entered all values
+
                 let email = document.getElementById("email1");
                 let password = document.getElementById("password1");
                 if (email.value == "" || password.value == "") {
                     alert("Ensure you input a value in all fields!");
                 }
                 else{
-                    window.open('file:///C:/Users/Akshay/Desktop/akshay%20college/VSCode/website/dashboard.html',"_blank")
+                    //window.open('file:///C:/Users/Akshay/Desktop/akshay%20college/VSCode/website/dashboard.html',"_blank")
                 }
             }
 
